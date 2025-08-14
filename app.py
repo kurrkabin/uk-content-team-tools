@@ -16,7 +16,7 @@ st.markdown(
 )
 
 st.title("UK Content Team Tools")
-st.caption("Quick launchpad for sports utilities. Add new tools anytime.")
+st.caption("Quick launchpad for sports utilities.")
 
 # --------- CONFIG (edit this list to add more tools) ---------
 TOOLS = {
