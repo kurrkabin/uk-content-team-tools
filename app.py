@@ -15,7 +15,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title("🇬🇧 UK Content Team Tools")
+st.title("UK Content Team Tools")
 st.caption("Quick launchpad for sports utilities. Add new tools anytime.")
 
 # --------- CONFIG (edit this list to add more tools) ---------
