@@ -59,4 +59,4 @@ for sport, items in TOOLS.items():
             st.link_button("Open", tool["url"], use_container_width=True)
 
 st.divider()
-st.caption("Tip: to add a tool, just append to the TOOLS config above. No other changes needed.")
+st.caption("More Tools Could Be Added In The Future")
