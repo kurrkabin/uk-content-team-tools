@@ -28,18 +28,19 @@ TOOLS = {
         },
         {
             "name": "End Game Stats Extractor",
-            "desc": "Scrape/format end‑game stats for sheets.",
+            "desc": "Scrape/format end-game stats for sheets.",
             "url": "https://cric-stats-extractor-bzapwd4g5z2vha7wldojku.streamlit.app/"
         },
     ],
-    "Rugby": [
+    "Rugby/Aussie": [   # 👈 change header here
         {
-            "name": "Rugby Union Try‑Scorers Creator",
+            "name": "Rugby/Aussie Rules Scorers Creator",   # 👈 updated tool name
             "desc": "Paste Bet365 players page → clean columns.",
             "url": "https://rugbyleague.streamlit.app/"
         },
     ],
 }
+
 
 # --------- RENDER ---------
 for sport, items in TOOLS.items():
