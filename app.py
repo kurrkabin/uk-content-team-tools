@@ -31,16 +31,20 @@ TOOLS = {
             "desc": "Scrape/format end-game stats for sheets.",
             "url": "https://cric-stats-extractor-bzapwd4g5z2vha7wldojku.streamlit.app/"
         },
-    ],
-    "Rugby/Aussie": [   # 👈 change header here
         {
-            "name": "Rugby/Aussie Rules Scorers Creator",   # 👈 updated tool name
+            "name": "Cricket Player Props Extractor",
+            "desc": "Parse Unibet markets → Boss-ready CSV/XLSX export.",
+            "url": "https://cricket-player-props-extractor-jbf4b3rpyddzxnm3dgx279.streamlit.app/"
+        },
+    ],
+    "Rugby/Aussie": [
+        {
+            "name": "Rugby/Aussie Rules Scorers Creator",
             "desc": "Paste Bet365 players page → clean columns.",
             "url": "https://rugbyleague.streamlit.app/"
         },
     ],
 }
-
 
 # --------- RENDER ---------
 for sport, items in TOOLS.items():
@@ -61,39 +65,3 @@ for sport, items in TOOLS.items():
 
 st.divider()
 st.caption("More Tools Could Be Added In The Future")
-
-{
-    "name": "Cricket Player Props Extractor",
-    "desc": "Parse Unibet markets → Boss-ready CSV/XLSX export.",
-    "url": "https://cricket-player-props-extractor-jbf4b3rpyddzxnm3dgx279.streamlit.app/"
-},
-
-TOOLS = {
-    "Cricket": [
-        {
-            "name": "Cricket Reduced Settler - Rules NOT updated, do not use for now",
-            "desc": "Reduce/settle outcomes quickly from copied market text.",
-            "url": "https://cricketreducedsettler-fjcp9xykrrrn9cdjeuqb86.streamlit.app/"
-        },
-        {
-            "name": "End Game Stats Extractor",
-            "desc": "Scrape/format end-game stats for sheets.",
-            "url": "https://cric-stats-extractor-bzapwd4g5z2vha7wldojku.streamlit.app/"
-        },
-        {
-            "name": "Cricket Player Props Extractor",
-            "desc": "Parse Unibet markets → Boss-ready CSV/XLSX export.",
-            "url": "https://cricket-player-props-extractor-jbf4b3rpyddzxnm3dgx279.streamlit.app/"
-        },
-    ],
-    "Rugby/Aussie": [
-        {
-            "name": "Rugby/Aussie Rules Scorers Creator",
-            "desc": "Paste Bet365 players page → clean columns.",
-            "url": "https://rugbyleague.streamlit.app/"
-        },
-    ],
-}
-
-
-
