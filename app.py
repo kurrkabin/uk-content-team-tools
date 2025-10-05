@@ -22,7 +22,7 @@ st.caption("Quick launchpad for sports utilities.")
 TOOLS = {
     "Cricket": [
         {
-            "name": "Cricket Reduced Settler - Rules NOT updated, do not use for now",
+            "name": "Cricket Reduced Matches Settler",
             "desc": "Reduce/settle outcomes quickly from copied market text.",
             "url": "https://cricketreducedsettler-fjcp9xykrrrn9cdjeuqb86.streamlit.app/"
         },
