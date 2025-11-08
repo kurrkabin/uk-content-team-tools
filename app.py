@@ -53,21 +53,29 @@ TOOLS = {
 }
 
 # --------- RENDER ---------
-for sport, items in TOOLS.items():
-    st.header(f"{'🏏' if sport=='Cricket' else '🏉'} {sport}")
-    cols = st.columns(3, gap="large")
-    for i, tool in enumerate(items):
-        with cols[i % 3]:
-            st.markdown(
-                f"""
-                <div class="tool-card">
-                  <h3>{tool['name']}</h3>
-                  <div class="muted">{tool['desc']}</div>
-                </div>
-                """,
-                unsafe_allow_html=True
-            )
-            st.link_button("Open", tool["url"], use_container_width=True)
+# --------- RENDER (one row, 5 tiles) ---------
+st.header("🚀 All Tools")
+
+# Flatten to one list
+all_tools = []
+for items in TOOLS.values():
+    all_tools.extend(items)
+
+# Exactly 5 columns (one row)
+cols = st.columns(5, gap="large")
+for i, tool in enumerate(all_tools[:5]):  # first 5 tools
+    with cols[i]:
+        st.markdown(
+            f"""
+            <div class="tool-card">
+              <h3>{tool['name']}</h3>
+              <div class="muted">{tool['desc']}</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        st.link_button("Open", tool["url"], use_container_width=True)
+
 
 st.divider()
 st.caption("More Tools Could Be Added In The Future")
