@@ -36,6 +36,12 @@ TOOLS = {
             "desc": "Parse Unibet markets → Boss-ready CSV/XLSX export.",
             "url": "https://cricket-player-props-extractor-jbf4b3rpyddzxnm3dgx279.streamlit.app/"
         },
+        {
+            "name": "Cricket Player Props Extractor Test Matches",
+            "desc": "Test cricket (1st Innings): Top Bowler & Top Batter + Player of the Match.",
+            "url": "https://cricket-player-props-extractor-test-matches-nunemh477kz2apjnhl.streamlit.app/"
+        },
+
     ],
     "Rugby/Aussie": [
         {
