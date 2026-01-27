@@ -42,6 +42,12 @@ TOOLS = {
             "url": "https://cricket-player-props-extractor-test-matches-nunemh477kz2apjnhl.streamlit.app/"
         },
 
+        {
+            "name": "Player 365 Pricing (Cricket)",
+            "desc": "Generate Bet365-style player markets from free-text names.",
+            "url": "https://cricket-bet365-pricing-yftepvsmpjcf5iruyp8egg.streamlit.app/"
+        },
+
     ],
     "Rugby/Aussie": [
         {
