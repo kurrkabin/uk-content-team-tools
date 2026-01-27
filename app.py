@@ -43,7 +43,7 @@ TOOLS = {
         },
 
         {
-            "name": "Player 365 Pricing (Cricket)",
+            "name": "Player 365 Pricing (Cricket- NEW)",
             "desc": "Generate Bet365-style player markets from free-text names.",
             "url": "https://cricket-bet365-pricing-yftepvsmpjcf5iruyp8egg.streamlit.app/"
         },
