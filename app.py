@@ -44,12 +44,6 @@ TOOLS = {
         },
 
     ],
-    "Rugby/Aussie": [
-        {
-            "name": "Rugby/Aussie Rules Scorers Creator",
-            "desc": "Paste Bet365 players page → clean columns.",
-            "url": "https://rugbyleague.streamlit.app/"
-        },
     ],
 }
 
