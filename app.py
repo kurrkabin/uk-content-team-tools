@@ -24,27 +24,27 @@ TOOLS = {
         {
             "name": "Cricket Reduced Matches Settler",
             "desc": "Reduce/settle outcomes quickly from copied market text.",
-            "url": "https://cricketreducedsettler-fjcp9xykrrrn9cdjeuqb86.streamlit.app/"
+            "url": "https://cricketreducedsettler-fjcp9xykrrrn9cdjeuqb86.streamlit.app/",
         },
         {
             "name": "Cricket Player Props Extractor",
             "desc": "Parse Unibet markets → Boss-ready CSV/XLSX export.",
-            "url": "https://cricket-player-props-extractor-jbf4b3rpyddzxnm3dgx279.streamlit.app/"
+            "url": "https://cricket-player-props-extractor-jbf4b3rpyddzxnm3dgx279.streamlit.app/",
         },
         {
             "name": "Cricket Player Props Extractor Test Matches",
             "desc": "Test cricket (1st Innings): Top Bowler & Top Batter + Player of the Match.",
-            "url": "https://cricket-player-props-extractor-test-matches-nunemh477kz2apjnhl.streamlit.app/"
+            "url": "https://cricket-player-props-extractor-test-matches-nunemh477kz2apjnhl.streamlit.app/",
         },
-
         {
             "name": "Player 365 Pricing (Cricket- New)",
             "desc": "Generate Bet365-style player markets from free-text names.",
-            "url": "https://cricket-bet365-pricing-yftepvsmpjcf5iruyp8egg.streamlit.app/"
+            "url": "https://cricket-bet365-pricing-yftepvsmpjcf5iruyp8egg.streamlit.app/",
         },
+    ]
+}
 
 # --------- RENDER ---------
-# --------- RENDER (one row, 5 tiles) ---------
 st.header("🚀 All Tools")
 
 # Flatten to one list
@@ -52,10 +52,13 @@ all_tools = []
 for items in TOOLS.values():
     all_tools.extend(items)
 
-# Exactly 5 columns (one row)
-cols = st.columns(5, gap="large")
-for i, tool in enumerate(all_tools[:5]):  # first 5 tools
-    with cols[i]:
+# Up to 5 columns
+num_tools = len(all_tools)
+num_cols = min(5, max(1, num_tools))
+cols = st.columns(num_cols, gap="large")
+
+for i, tool in enumerate(all_tools):
+    with cols[i % num_cols]:
         st.markdown(
             f"""
             <div class="tool-card">
@@ -63,10 +66,9 @@ for i, tool in enumerate(all_tools[:5]):  # first 5 tools
               <div class="muted">{tool['desc']}</div>
             </div>
             """,
-            unsafe_allow_html=True
+            unsafe_allow_html=True,
         )
         st.link_button("Open", tool["url"], use_container_width=True)
 
-
 st.divider()
-st.caption("More Tools Could Be Added In The Future")
+st.caption("More tools could be added in the future.")
