@@ -27,11 +27,6 @@ TOOLS = {
             "url": "https://cricketreducedsettler-fjcp9xykrrrn9cdjeuqb86.streamlit.app/"
         },
         {
-            "name": "End Game Stats Extractor",
-            "desc": "Scrape/format end-game stats for sheets.",
-            "url": "https://cric-stats-extractor-bzapwd4g5z2vha7wldojku.streamlit.app/"
-        },
-        {
             "name": "Cricket Player Props Extractor",
             "desc": "Parse Unibet markets → Boss-ready CSV/XLSX export.",
             "url": "https://cricket-player-props-extractor-jbf4b3rpyddzxnm3dgx279.streamlit.app/"
