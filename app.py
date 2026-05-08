@@ -41,6 +41,11 @@ TOOLS = {
             "desc": "Generate Bet365-style player markets from free-text names.",
             "url": "https://cricket-bet365-pricing-yftepvsmpjcf5iruyp8egg.streamlit.app/",
         },
+        {
+            "name": "Cricket Stats Extractor",
+            "desc": "Extract and analyze cricket statistics.",
+            "url": "https://cric-stats-extractor-bzapwd4g5z2vha7wldojku.streamlit.app/",
+        },
     ]
 }
 
